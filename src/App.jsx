@@ -90,12 +90,12 @@ const services = [
 ];
 
 const galleryImages = [
-  "images/gallery-1.jpg",
-  "images/gallery-2.jpg",
-  "images/gallery-3.jpg",
-  "images/gallery-4.jpg",
-  "images/gallery-5.jpg",
-  "images/gallery-6.jpg",
+  "https://images.unsplash.com/photo-1527799820374-dcf8d9d4a388?auto=format&fit=crop&w=1000&q=80",
+  "https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?auto=format&fit=crop&w=1000&q=80",
+  "https://images.unsplash.com/photo-1620331311520-246422fd82f9?auto=format&fit=crop&w=1000&q=80",
+  "https://images.unsplash.com/photo-1580618672591-eb180b1a973f?auto=format&fit=crop&w=1000&q=80",
+  "https://plus.unsplash.com/premium_photo-1661380558859-40df8dd91dfd?auto=format&fit=crop&w=1000&q=80",
+  "https://images.unsplash.com/photo-1599351431202-1e0f0137899a?auto=format&fit=crop&w=1000&q=80",
 ];
 
 const testimonials = [
@@ -231,20 +231,21 @@ function LazyImage({
 
   return (
     <div className={cn("relative overflow-hidden bg-zinc-900", className)}>
-      {!loaded && (
-        <div className="absolute inset-0 animate-pulse bg-gradient-to-br from-zinc-800 via-zinc-900 to-black" />
-      )}
-
+      <div
+        className={cn(
+          "absolute inset-0 animate-pulse bg-gradient-to-br from-zinc-800 via-zinc-900 to-black transition-opacity duration-500",
+          loaded ? "opacity-0" : "opacity-100"
+        )}
+      />
       <img
         src={src}
         alt={alt}
-        loading={priority ? "eager" : "auto"}
+        loading={priority ? "eager" : "lazy"}
         decoding="async"
-        fetchPriority={priority ? "high" : "auto"}
         onLoad={() => setLoaded(true)}
         className={cn(
-          "h-full w-full object-cover transition-opacity duration-300",
-          loaded ? "opacity-100" : "opacity-0",
+          "h-full w-full object-cover transition duration-700",
+          loaded ? "scale-100 opacity-100" : "scale-105 opacity-0",
           imgClassName
         )}
       />
