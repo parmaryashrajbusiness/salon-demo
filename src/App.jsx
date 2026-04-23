@@ -14,7 +14,7 @@ const salonData = {
   phoneDisplay: "+91 99999 99999",
   phoneHref: "tel:+919999999999",
   whatsappHref:
-    "https://wa.me/919999999999?text=Hi%2C%20I%20want%20to%20book%20an%20appointment",
+    "https://wa.me/919999999999?text=Hi%2C%20I%20want%20to%20book%20an%20appointment.%0AService%3A%0ADate%3A%0ATime%3A",
   instagramHref: "https://instagram.com/your_salon_handle",
   instagramHandle: "@your_salon_handle",
   openingHours: "Mon - Sun • 10:00 AM to 10:00 PM",
