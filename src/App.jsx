@@ -267,7 +267,7 @@ function handleWhatsAppClick(e, href, label = "WhatsApp Booking") {
 
   setTimeout(() => {
     window.open(href, "_blank", "noopener,noreferrer");
-  }, 800);
+  }, 400);
 }
 
 function Header() {
