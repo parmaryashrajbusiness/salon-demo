@@ -34,7 +34,7 @@ const services = [
     price: "₹299 onwards",
     duration: "45 min",
     image:
-      "images/service-haircut.jpg",
+      "https://plus.unsplash.com/premium_photo-1661645788141-8196a45fb483?auto=format&fit=crop&w=900&q=80",
     desc: "Haircut with styling consultation and finishing for a clean daily look or special occasion.",
   },
   {
@@ -44,7 +44,7 @@ const services = [
     price: "₹199 onwards",
     duration: "30 min",
     image:
-      "images/service-beard.jpg",
+      "https://images.unsplash.com/photo-1517832606299-7ae9b720a186?auto=format&fit=crop&w=900&q=80",
     desc: "Beard trimming, shaping, detailing, and finishing for a sharp and well-groomed appearance.",
   },
   {
@@ -54,7 +54,7 @@ const services = [
     price: "₹699 onwards",
     duration: "60 min",
     image:
-      "images/service-facial.jpg",
+      "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=900&q=80",
     desc: "Skin care session designed to refresh, cleanse, and restore a healthy, well-maintained look.",
   },
   {
@@ -64,7 +64,7 @@ const services = [
     price: "₹799 onwards",
     duration: "50 min",
     image:
-      "images/service-spa.jpg",
+      "https://plus.unsplash.com/premium_photo-1664475130052-f58aaf58854e?auto=format&fit=crop&w=900&q=80",
     desc: "Hair and scalp treatment for nourishment, softness, and improved texture with a relaxing salon experience.",
   },
   {
@@ -74,7 +74,7 @@ const services = [
     price: "₹599 onwards",
     duration: "55 min",
     image:
-      "images/service-manicure.jpg",
+      "https://images.unsplash.com/photo-1663229050022-ac26de6f05d3?auto=format&fit=crop&w=900&q=80",
     desc: "Hand and foot care with attention to detail, hygiene, and a neat polished finish.",
   },
   {
@@ -84,9 +84,9 @@ const services = [
     price: "Custom package",
     duration: "By consultation",
     image:
-      "images/service-bridal.jpg",
+      "https://plus.unsplash.com/premium_photo-1661387527207-6b2919ed49d5?auto=format&fit=crop&w=900&q=80",
     desc: "Makeup and grooming service for weddings, events, shoots, and festive occasions.",
-  },
+  }
 ];
 
 const galleryImages = [
