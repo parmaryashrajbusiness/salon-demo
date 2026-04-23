@@ -10,9 +10,9 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-6CMJXNNN4F"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
+    function gtag() { window.dataLayer.push(arguments); }
+    window.gtag = gtag;
     gtag('js', new Date());
-
     gtag('config', 'G-6CMJXNNN4F');
   </script>
 </head>

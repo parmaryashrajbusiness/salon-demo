@@ -253,6 +253,22 @@ function LazyImage({
   );
 }
 
+function handleWhatsAppClick(e, href, label = "WhatsApp Booking") {
+  e.preventDefault();
+
+  if (window.gtag) {
+    window.gtag("event", "whatsapp_click", {
+      event_category: "engagement",
+      event_label: label,
+      transport_type: "beacon",
+    });
+  }
+
+  setTimeout(() => {
+    window.open(href, "_blank", "noopener,noreferrer");
+  }, 250);
+}
+
 function Header() {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
@@ -432,6 +448,7 @@ function Hero() {
               href={salonData.whatsappHref}
               target="_blank"
               rel="noreferrer"
+              onClick={(e) => handleWhatsAppClick(e, salonData.whatsappHref, "Hero WhatsApp Booking")}
               className="rounded-full border border-emerald-500/20 bg-emerald-500/10 px-7 py-4 text-center text-sm font-semibold text-emerald-300 transition hover:bg-emerald-500/20"
             >
               WhatsApp Booking
@@ -836,6 +853,7 @@ function BookingSection() {
                   href={salonData.whatsappHref}
                   target="_blank"
                   rel="noreferrer"
+                  onClick={(e) => handleWhatsAppClick(e, salonData.whatsappHref, "Booking Info WhatsApp")}
                   className="mt-1 inline-block text-emerald-300 underline underline-offset-4"
                 >
                   Chat directly for quick booking
@@ -854,6 +872,7 @@ function BookingSection() {
                 href={salonData.whatsappHref}
                 target="_blank"
                 rel="noreferrer"
+                onClick={(e) => handleWhatsAppClick(e, salonData.whatsappHref, "Booking Section WhatsApp Now")}
                 className="rounded-2xl bg-white px-5 py-4 text-center text-sm font-semibold text-black transition hover:scale-[1.02]"
               >
                 WhatsApp Now
@@ -961,6 +980,7 @@ function BookingSection() {
                 href={salonData.whatsappHref}
                 target="_blank"
                 rel="noreferrer"
+                onClick={(e) => handleWhatsAppClick(e, salonData.whatsappHref, "Booking Form WhatsApp")}
                 className="rounded-full border border-white/10 bg-white/5 px-6 py-4 text-center text-sm font-semibold text-white transition hover:bg-white/10"
               >
                 Book on WhatsApp
@@ -1105,6 +1125,7 @@ function FloatingCTA() {
         href={salonData.whatsappHref}
         target="_blank"
         rel="noreferrer"
+        onClick={(e) => handleWhatsAppClick(e, salonData.whatsappHref, "Floating WhatsApp")}
         className="rounded-full bg-emerald-500 px-5 py-3 text-sm font-semibold text-white shadow-xl transition hover:scale-105"
       >
         WhatsApp
