@@ -7,8 +7,8 @@ const salonData = {
   subtitle:
     "Modern salon for hair, skin, beauty, and grooming services in a clean, stylish, and comfortable setting.",
   badge: "Open daily • By appointment & walk-in",
-  rating: "4.9",
-  reviews: "250+ client reviews",
+  rating: "Your Rating",
+  reviews: "Your Reviews",
   years: "7+ years",
   address: "Sample Address, Ahmedabad, Gujarat",
   phoneDisplay: "+91 99999 99999",
