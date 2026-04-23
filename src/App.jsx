@@ -15,8 +15,8 @@ const salonData = {
   phoneHref: "tel:+919999999999",
   whatsappHref:
     "https://wa.me/919999999999?text=Hi%2C%20I%20want%20to%20book%20an%20appointment",
-  instagramHref: "https://instagram.com/luxeaurasalon",
-  instagramHandle: "@luxeaura_salon",
+  instagramHref: "https://instagram.com/your_salon_handle",
+  instagramHandle: "@your_salon_handle",
   openingHours: "Mon - Sun • 10:00 AM to 10:00 PM",
   mapEmbed:
     "https://www.google.com/maps/embed?pb=PASTE_REAL_MAP_EMBED_LINK_HERE",
@@ -442,7 +442,7 @@ function Hero() {
             variants={fadeUp}
             className="mt-10 grid gap-4 sm:grid-cols-3"
           >
-            {[`${salonData.rating}★ Rated`, salonData.reviews, salonData.openingHours].map(
+            {[`${salonData.rating} ★ Rated`, salonData.reviews, salonData.openingHours].map(
               (item) => (
                 <div
                   key={item}
