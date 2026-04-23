@@ -262,11 +262,12 @@ function handleWhatsAppClick(e, href, label = "WhatsApp Booking") {
       event_label: label,
       transport_type: "beacon",
     });
+    console.log("WhatsApp event fired"); // 👈 add this
   }
 
   setTimeout(() => {
     window.open(href, "_blank", "noopener,noreferrer");
-  }, 250);
+  }, 800);
 }
 
 function Header() {
